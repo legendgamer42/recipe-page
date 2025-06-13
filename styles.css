@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 54%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    background-color: white;
+    max-width: 700px;
+    width: 90%;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 5rem 0;
+}
+.container div{
+    width: 100%;
+}
+
+.img-omlette img {
+    width: 100%;
+    border-radius: 1rem;
+    /* margin-top: 1rem; */
+}
+.container h1,
+.container h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.container p,
+.container ul,
+.container ol {
+    margin-bottom: 1.5rem;
+}
+
+.container ul,
+.container ol {
+    padding-left: 1.5rem;
+}
+
+.container li {
+    margin-bottom: 0.5rem;
+}
+.instructions li{
+    margin-top: 1rem;
+}
+.ingredients li{
+    margin-top: 1rem;
+}
+.prep-time{
+    background-color: hsl(330, 100%, 98%);
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.prep-time ul{
+    padding-left:1.25rem;
+    margin-bottom: 0;
+}
+.prep-time li{
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+.prep-time h3{
+    color: hsl(332, 51%, 32%);
+    margin-bottom: 1.25rem;
+}
+.ingredients h2, .instructions h2,.nutrition h2{
+    color: brown;
+}
+
+
+    .nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+  font-size: 1rem;
+}
+
+
+.nutrition-item strong {
+  min-width: 80px;
+  text-align: left; 
+  color: brown;
+}
+@media only screen and (min-width: 800px) {
+  .nutrition-item strong{
+    width: 220px;
+  }
+}
+@media only screen and (max-width: 800px) and (min-width:300px) {
+    
+
+  .nutrition-item strong{
+    width: 120px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+}
